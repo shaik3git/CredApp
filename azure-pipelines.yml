@@ -100,7 +100,7 @@ stages:
         backendAzureRmKey: $(tfStateKey)
 
     # - task: TerraformTask@5
-    #   displayName: Terraform Apply (infra + push secrets to Key Vault)
+    #   displayName: Terraform Destroy (infra + push secrets to Key Vault)
     #   inputs:
     #     provider: azurerm
     #     command: destroy
