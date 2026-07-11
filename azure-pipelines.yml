@@ -24,12 +24,12 @@ pool:
 variables:
 
   # Azure service connections
-  acrServiceConnection: 'CredPay-ACR-SC'
-  azureServiceConnection: 'scnew2'
+  acrServiceConnection: 'cred-acr'
+  azureServiceConnection: 'credappserviceconnection'
 
   # ACR resource name (not the service connection name above) - needed for
   # `az aks update --attach-acr`, which takes the registry's own name.
-  acrName: 'credproj'
+  acrName: 'credappacr'
 
   # Image tag - every build is pushed as both $(tag) and :latest
   tag: '$(Build.BuildId)'
