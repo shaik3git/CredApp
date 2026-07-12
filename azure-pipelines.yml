@@ -183,8 +183,8 @@ stages:
         buildContext: frontend-react
 
         tags: |
-    #       $(tag)
-    #       latest
+          $(tag)
+          latest
 
 #     #########################################################
 #     # USER SERVICE
